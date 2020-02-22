@@ -8,11 +8,11 @@ const token = process.env.TOKEN;
 const bot = new Discord.Client();
 
 bot.on('ready', () => {
-    console.log('Bleep bloop. Marvin is reporting for duty. ' + meaning_of_life)
+    console.log('Bleep bloop. Marvin is reporting for duty. ')
 })
 
 bot.on('message', message => {
-    console.log(message.content);
+    
 });
 
 bot.login(token);
