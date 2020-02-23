@@ -1,9 +1,7 @@
+require('dotenv').config();;
 const fs = require('fs');
 const Discord = require('discord.js');
 const { prefix, meaning_of_life } = require('./config/config.json');
-const Dotenv = require('dotenv');
-
-Dotenv.config();
 
 const token = process.env.TOKEN;
 
@@ -34,7 +32,7 @@ bot.on('message', message => {
 
     if (!bot.commands.has(commandName)) {
         if (commandName === meaning_of_life) {
-            message.channel.send('You have found the meaning of life! 🤖');
+            message.channel.send('You have found the answer to the ultimate question of life, the universe and everything! 🤖');
             return;
         } 
         message.reply('I don\'t know how to do that! 😢');
