@@ -8,6 +8,8 @@ const token = process.env.TOKEN;
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
 
+global.__basedir = __dirname;
+
 // Read available commands from files
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 for (const file of commandFiles) {
