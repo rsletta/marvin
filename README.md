@@ -12,7 +12,7 @@ npm install --global pm2
 
 ## Run with PM2
 ```bash
-pm2 start index.js --name "Marvin"
+pm2 start index.js --name "Marvin" --watch
 ```
 ## Avatar
 ![Waving robot](assets/happy_robot_remix_monsterbraingames.png)
